@@ -1,0 +1,42 @@
+#thumbContainer {
+    width : 80%;
+    display : grid;
+    gap : 20px;
+    grid-template-columns: repeat(3 , 1fr);
+    margin : auto;
+    margin-top : 50px;
+
+
+}
+#thumbContainer > div {
+    width : 100%;
+    cursor: pointer;
+}
+
+#thumbContainer > div:hover{ 
+    box-shadow : 0 1px 3px #eee;
+    transform: scale(1.2);
+    transition-delay: 3s;
+    z-index : 2;
+}
+
+#thumbContainer > div > div > img{
+    width : 100%;
+    height : 100%;
+}
+
+#thumbContainer > div >div:nth-child(2){
+     width : 90%;
+     margin : auto;
+     margin-top : 10px;
+     font-size : 20px;
+     font-family: sans-serif;
+}
+
+#videoContainer{
+    width : 90%;
+    margin : auto;
+    display : grid;
+    gap : 20px;
+    grid-template-columns: repeat(4 , 1fr); 
+}
